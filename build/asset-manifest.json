@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a59e1ed5.css",
+    "main.js": "/static/js/main.592ccd7a.js",
+    "static/js/453.6ac9e9ce.chunk.js": "/static/js/453.6ac9e9ce.chunk.js",
+    "static/media/UxumGrotesque-Light.woff": "/static/media/UxumGrotesque-Light.e81be45a9826574a6579.woff",
+    "static/media/UxumGrotesque-Medium.woff": "/static/media/UxumGrotesque-Medium.098cac00a65760b31cb6.woff",
+    "index.html": "/index.html",
+    "main.a59e1ed5.css.map": "/static/css/main.a59e1ed5.css.map",
+    "main.592ccd7a.js.map": "/static/js/main.592ccd7a.js.map",
+    "453.6ac9e9ce.chunk.js.map": "/static/js/453.6ac9e9ce.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a59e1ed5.css",
+    "static/js/main.592ccd7a.js"
+  ]
+}
