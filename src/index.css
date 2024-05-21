@@ -1,12 +1,18 @@
 @font-face {
     font-family: 'uxum';
-    src: url('/src/fonts/UxumGrotesque-Medium.woff') format('woff');
+    src: url('/src/assets/fonts/UxumGrotesque-Medium.woff') format('woff');
 }
 
 @font-face {
     font-family: 'uxum-light';
-    src: url('/src/fonts/UxumGrotesque-Light.woff') format('woff');
+    src: url('/src/assets/fonts/UxumGrotesque-Light.woff') format('woff');
 }
+
+@layer utilities {
+    .bg-custom-gradient {
+      background: linear-gradient(173deg, rgba(230, 236, 242, 0) 59.49%, #E6ECF2 94.53%);
+    }
+  }
 
 @tailwind base;
 @tailwind components;

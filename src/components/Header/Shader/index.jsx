@@ -4,11 +4,10 @@ import * as THREE from 'three'
 
 export default function Shader({pointLight}) {
     const shaderMaterialRef = useRef();
-console.log('this is pointlight', pointLight)
     const shadowMap = pointLight.current && pointLight.current.shadow.map
 
 
-      useFrame(({clock}) => {
+    useFrame(({clock}) => {
         if (shaderMaterialRef.current) {
             shaderMaterialRef.current.uniforms.time.value = clock.elapsedTime;
         }
@@ -90,15 +89,6 @@ console.log('this is pointlight', pointLight)
             vec3 blackColor = vec3(1.0);
             vec3 uvColor = vec3(0.0, 1.0, 0.0);
             vec3 mixedColor = mix(blackColor, uvColor, strength);
-            
-            // Calculate distance from current fragment to the pointer position
-            float distance = length(vUv - pointer);
-            
-            // If the distance is within a certain threshold, color the fragment red
-            if (distance < 0.05) {
-                mixedColor = mix(blackColor, uvColor, 1.0 / (distance * 100.0));
-
-            }
             
             gl_FragColor = vec4(mixedColor, 1.0);
         }

@@ -6,7 +6,7 @@ import Letters from './Letters'
 import { Physics } from '@react-three/cannon'
 import Floor from './Floor'
 
-export default function Header() {
+export default function Header({globalOpen}) {
   const pointLight = useRef()
   return (
     <div className='bg-green-500 h-full border rounded-lg relative'>
@@ -19,7 +19,7 @@ export default function Header() {
             <pointLight position={[4, 0, 5]} ref={pointLight} castShadow />
             <Shader pointLight={pointLight}/>
             <Physics>
-                <Letters />
+                <Letters globalOpen={globalOpen} />
                 <Floor rotation={[-Math.PI / 2, 0, 0]} position={[0,-3,0]}/>
                 <Floor rotation={[0, -Math.PI / 2, 0]} position={[1.8,0,0]}/>
                 <Floor rotation={[0, Math.PI / 2, 0]} position={[-1,0,0]}/>
