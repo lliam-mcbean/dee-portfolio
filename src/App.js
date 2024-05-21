@@ -7,7 +7,7 @@ import Project from './components/Project';
 function App() {
   const [globalOpen, setGlobalOpen] = useState(false)
   return (
-    <div className="font-uxumLight w-screen h-screen overflow-hidden grid grid-rows-12 grid-cols-4 bg-black">
+    <div className="font-uxumLight w-screen h-screen overflow-hidden grid grid-rows-12 grid-cols-4 bg-black p-2">
       <div className='col-span-4 row-span-1'>
         <Navigation />
       </div>
