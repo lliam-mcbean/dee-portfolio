@@ -15,7 +15,20 @@ module.exports = {
       colors: {
         customBlue: '#e9f1fa',
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            'h3': {
+              fontSize: '1.5rem', // Adjust as needed
+              fontWeight: '700',
+              color: '#1F2937', // Adjust as needed (e.g., gray-800)
+            },
+          },
+        },
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }

@@ -16,7 +16,7 @@ export default function Project({setGlobalOpen}) {
   return (
     <div onClick={() => !open && setBothTrue()} className={`${open && 'w-screen h-[91.67vh] fixed left-0 top-[8.33vh]'} bg-black flex p-2 transition-all z-50`}>
       <div className={`${!open && 'hidden'} w-3/12 text-white p-4`}>
-        <div onClick={() => setBothFalse()} className='z-50 border border-white cursor-pointer w-max px-2 object-contain rounded-full'>close</div>
+        <div onClick={() => setBothFalse()} className='z-50 border border-transparent cursor-pointer w-max px-2 object-contain rounded-full'>close</div>
         <div className='text-[56px] tracking-tighter'>Calgary Municipal Land Corporation</div>
         <div className='text-gray-500 pt-4'>Project:</div>
         <div>Website Redesign</div>

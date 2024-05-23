@@ -26,7 +26,7 @@ export default function Header({globalOpen}) {
                 <Floor rotation={[Math.PI,0, 0]} position={[0,0,0.27]}/>
                 <Floor rotation={[0,0, 0]} position={[0,0,-0.27]}/>
             </Physics>
-            <OrbitControls />
+            {/* <OrbitControls /> */}
         </Canvas>
     </div>
   )

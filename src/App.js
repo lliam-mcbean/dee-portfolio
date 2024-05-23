@@ -7,15 +7,15 @@ import Project from './components/Project';
 function App() {
   const [globalOpen, setGlobalOpen] = useState(false)
   return (
-    <div className="font-uxumLight w-screen relative h-screen overflow-hidden relative bg-black p-2">
-      <div className=''>
+    <div className="prose font-uxumLight w-screen relative h-screen overflow-x-hidden lg:overflow-hidden bg-black p-2">
+      <div className='sticky'>
         <Navigation />
       </div>
-      <div className='flex h-[90vh]'>
-      <div className='w-1/2 p-1 sticky z-40'>
+      <div className='block lg:flex h-[90vh] '>
+      <div className='w-full lg:w-1/2 p-1 h-[90vh]  z-40'>
         <Header globalOpen={globalOpen} />
       </div>
-      <div className='w-1/2 overflow-x-hidden overflow-y-scroll p-1'>
+      <div className='w-full lg:w-1/2 overflow-x-hidden lg:overflow-y-scroll p-1'>
         <Project setGlobalOpen={setGlobalOpen} />
         <Project setGlobalOpen={setGlobalOpen} />
         <Project setGlobalOpen={setGlobalOpen} />
